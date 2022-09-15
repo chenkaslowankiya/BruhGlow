@@ -44,8 +44,8 @@ jobs:
 
       - name : Commit Changes
         run: |
-           git clone --depth=1 "https://github.com/${{ secrets.USERNAME }}/BruvFlow"
-           cp keys.json BruvFlow/keys.json && cp stamp.md BruvFlow/stamp.md
+           git clone --depth=1 "https://github.com/${{ secrets.USERNAME }}/BruhGlow"
+           cp keys.json BruhGlow/keys.json && cp stamp.md BruhGlow/stamp.md
            cd BruvFlow && git add -u
            git commit -m "commit : $(curl -s http://whatthecommit.com/index.txt)"
-           git push "https://${{ secrets.TOKEN }}@github.com/${{ secrets.USERNAME }}/BruvFlow" HEAD:main
+           git push "https://${{ secrets.TOKEN }}@github.com/${{ secrets.USERNAME }}/BruhGlow" HEAD:main
